@@ -1,0 +1,92 @@
+.nav-all{
+    background: white;
+    margin: 1% 1% 0 1%;
+    height: 75px;
+}
+
+.nav-items{
+    width: 100%;
+}
+
+.nav-item{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.nav-item:hover{
+    color: #395CB5;
+    cursor: pointer;
+}
+
+.nav-label:hover{  
+    cursor: pointer;
+}
+
+.cancel-chip{
+    color: #707070;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 3px 0.5px rgba(0, 0, 0, 0.3);
+    width: 85px;
+    cursor: pointer;
+}
+
+.delete-chip{
+    background-color: #E63E3E;
+    color: white;
+    cursor: pointer;
+}
+
+.fa-close{
+    color: #E63E3E;
+    padding-right: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.fa-trash{
+    padding-right: 5px;
+    color: white;
+}
+
+.fa-check{
+    padding-right: 5px;
+}
+
+.save-chip{
+    color: #FFFFFF;
+    background-color: #3BC269;
+    box-shadow: 0 0 3px 0.5px rgba(0, 0, 0, 0.3);
+    width: 85px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.chips{
+    margin-right: 2%;
+}
+
+.crowds-logo{
+    margin-left: 1%;
+}
+
+.logo{
+    border-radius: 50%;
+    width: 70px;
+}
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.dropdown-item{
+    cursor: pointer;
+}
+
+.progress-steps{
+
+}
+.editAndNavItems{
+    width: 40%;
+}
+
+

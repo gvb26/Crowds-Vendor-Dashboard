@@ -1,0 +1,56 @@
+<app-crowds-header></app-crowds-header>
+<div class="container pageSize">
+  <div class="container">
+    <form (ngSubmit)="onSubmit()">
+        <div>
+          <label class="crowds-form-label" for="username">Email: </label>
+          <input 
+          ngModel 
+          #email = ngModel 
+          required 
+          pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
+          type="email" 
+          name="email"
+          class="crowds-form-element form-control" id="username" [class.is-invalid]="email.touched && !email.valid">
+        </div>
+        <div *ngIf="email.touched && !email.valid"
+              class="alert alert-danger email-error">
+         <div *ngIf="email.errors.required">
+           email is required
+         </div>
+         <div *ngIf="email.errors.pattern">
+           email not valid
+         </div>
+        </div>
+      <br>
+        <div class="form-group">
+          <label class="crowds-form-label" for="password">Password: </label>
+          <div class="input-group">
+            <input #password type="{{input_type}}" class="crowds-form-element form-control" id="password">
+            <div class="input-group-append">
+              <button (click)="toggleEye()" class="eye-btn btn btn-outline-primary" type="button">
+                <span class="fa"
+                      [class.fa-eye]="!hidden"
+                      [class.fa-eye-slash]="hidden">
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      <br>
+      <br>
+      <br>
+    </form>
+  </div>
+  <div class="container">
+    <button (click)="onSubmit(email.value, password.value)" 
+            type="button" 
+            class="next-btn crowds-form-element btn btn-outline-light"
+            [ngStyle]="{'background': '#395CB5'}"
+            [disabled]="!email.valid">Log In
+    </button>
+  </div>
+  
+  <br>
+  <app-crowds-button color="#3BC269" text="Sign Up" link="/signup/credentials"></app-crowds-button>
+</div>

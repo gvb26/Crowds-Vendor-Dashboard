@@ -1,0 +1,104 @@
+.whole-card{
+    width: 400px;
+}
+
+.subsection-title{
+    color: #395CB5;
+    font-family: 'Montserrat';
+    height: 20px;
+}
+
+.category-container{
+    min-width: 150px;
+    max-width: 290px;
+    width: 100%;
+}
+
+.category-container-edit{
+    margin-bottom: 5%;
+}
+
+.category-value{
+    text-transform: capitalize;
+    font-size: 1.2em;
+    font-family: 'Montserrat';
+    width: 100%;
+    color: #555555;
+}
+
+
+.items-container{
+    width: 100%;
+}
+
+.item-container{
+    margin-bottom: 3%;
+    min-width: 150px;
+    max-width: 290px;
+}
+
+.item-price{
+    margin-bottom: 3%;
+}
+
+.item-price-value{
+    width: 37px;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Montserrat';
+    color: #395CB5;
+
+}
+
+.item-name{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: 'Montserrat';
+    width: 100%;
+    color: #555555;
+}
+
+.item-desc{
+    font-size: 11px;
+    font-family: 'Montserrat';
+    width: 100%;
+    color: #555555;
+}
+
+input{
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 0.5px  #555555 solid;
+}
+
+input[disabled]{
+    border-bottom: none;
+    background-color: white;
+}
+
+input:focus {
+    outline-width: 0;
+}
+
+.mat-card-subtitle{
+    margin-bottom: 0;
+}
+
+.add-remove{
+    margin-left: 5px;
+    height: inherit;
+}
+
+.new-item{
+    font-size: 12px;
+    color: #395CB5;
+    cursor: pointer;
+    margin-left: 2px;
+}
+
+.remove-item{
+    font-size: 12px;
+    color: #E63E3E;
+    cursor: pointer;
+}

@@ -1,0 +1,59 @@
+<div *ngIf="loading" class="progress-bar">
+  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</div>
+
+<div class="nav-bar">
+  <crowds-navbar editMode="true" 
+                (cancelled)="cancel()" 
+                (saved)="save(locationInfo)">
+  </crowds-navbar>
+</div>  
+
+<form [formGroup]="parentForm" 
+      class="all container-fluid"
+      fxLayout="row" fxLayoutAlign="space-between">
+  <div class="location-info">
+    <app-location-screen [parentForm]="parentForm"
+                          [name]="location?.name"
+                          [street_address]="location?.street_address"
+                          [city]="location?.city"
+                          [state]="location?.state"
+                          [zip]="location?.zip"
+                          [hours]="location?.hours"
+                          [phone]="location?.phone"
+                          [website]="location?.website"
+                          [capacity]="location?.capacity"
+                          [cuisines]="location?.cuisines"
+                          [locationTypeID]="location?.locationTypeID | async"
+                          [menu]="location?.menu"
+                          #locationInfo
+                          editMode="true">
+    </app-location-screen>
+    
+  </div>
+  <div class="vertical-line"></div>
+  <div class="menu" fxLayout="column" >
+    <div class="menu-title">
+      <mat-card>
+          <mat-card-header>
+              <mat-card-title>Menu</mat-card-title>
+          </mat-card-header>
+      </mat-card>
+    </div>
+    <div fxLayout="row" class="menu-body-container" >
+      <div class="menu-body">
+        <mat-card>  
+            <app-menu #menu editable="true"
+                      [data]="location?.menu"
+                      [parentForm]="parentForm">
+            </app-menu>
+        </mat-card> 
+      </div>
+      <div (click)="addNewMenuSection(menu)" class="add-menu" 
+            fxLayout="column" fxLayoutAlign="center center">
+        <span class="fa fa-plus-square"></span>
+        <span>Add new menu section</span>  
+      </div>
+    </div>
+  </div>
+</form>

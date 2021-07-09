@@ -1,0 +1,53 @@
+.dealButtons {
+    width: 60%;   
+}
+
+.next-btn{
+    background-color: white;
+    color: #395CB5;
+    width: 100%;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+
+  .btn:focus, .btn:active, .btn:hover{
+    box-shadow: none !important;
+    outline: 0;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
+.show > .btn-outline-primary.dropdown-toggle {
+  border-color: white;
+}
+
+.font {
+    font-family: "Montserrat", 'Regular';
+    letter-spacing: 1px;
+}
+
+.panes {
+  height: 100%;
+  width: 200%;
+
+  display: flex;
+  div {
+    flex: 1;
+  }
+}
+
+:host {
+  display: block;
+}
+
+.svg {
+  // box-shadow: inset 0px 0px 2px 0.5px;
+  border-radius: 20px;
+  float: left;
+  margin-left: 16px;
+  margin-right: -26px;
+}
+
+.mat-icon {
+  background-color: white;
+  color: #395CB5  
+}

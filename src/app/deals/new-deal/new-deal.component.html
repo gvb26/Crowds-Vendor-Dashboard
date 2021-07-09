@@ -1,0 +1,159 @@
+<div *ngIf="loading" class="progress-bar">
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</div>
+<crowds-navbar (deleted)="delete()"
+                (cancelled)="cancel()"
+                (saved)="save()">
+</crowds-navbar>
+
+<form [formGroup]="form" class="all">
+    <div class="form-group">
+        <label>What kind of deal would you like to make?</label>
+        <select #dealType type="checkbox"
+                formControlName="type"
+                class="form-control dealType"
+                (change)="onDealTypeChange(dealType.value)">
+            <option></option>
+            <option *ngFor="let dealType of dealTypes">
+                {{dealType}}
+            </option>
+        </select>
+    </div>
+
+    <div *ngIf="showDiscountType" class="form-group">
+        <label>What kind of discount?</label>
+        <select #discountType type="checkbox"
+                formControlName="discount"
+                class="form-control dealType"
+                (change)="onDiscountTypeChange(discountType.value)">
+            <option></option>
+            <option *ngFor="let discountType of discountTypes">
+                {{discountType}}
+            </option>
+        </select>
+    </div>
+    
+    <div *ngIf="showDealLocation" class="form-group">
+        <label>At which location?</label>
+        <select #dealLocation type="checkbox"
+                formControlName="location"  
+                class="form-control dealType"
+                (change)="onDealLocationChange(dealLocation.value)">
+            <option></option>
+            <option>27 Market Street</option>
+        </select>
+    </div>
+
+    <div *ngIf="showDealAmount"  class="form-group" fxLayout="column">
+        <label *ngIf="dollaOff">How many dollars off?</label>
+        <label *ngIf="!dollaOff">How many percentage off?</label>
+        <span class="dealAmountContainer">
+            <span *ngIf="dollaOff">$</span>
+            <input (keyup)="onDealAmountChange(dollarsOff.value)" 
+                    #dollarsOff class="dealInput" type="number"
+                    formControlName="valueOff">
+            <span *ngIf="!dollaOff">%</span>
+        </span>
+    </div>
+
+    <div *ngIf="showLimitedTimeDeal"  class="form-group" fxLayout="column">
+        <label>Is this deal for a limited time?</label>
+        <mat-chip-list>
+            <mat-chip *ngFor="let ltdChip of limitedTimeDealChips" [selected]="ltdChip.selected"
+                        class="chip" (click)="onLimitedDealTimeChange(ltdChip)">
+                {{ltdChip.name}}
+            </mat-chip>
+        </mat-chip-list>
+    </div>
+
+    <div *ngIf="showDealStartEndDate" class="form-group" fxLayout="column">
+        <label *ngIf="showDealEndDate">When does the deal start and end?</label>
+        <label *ngIf="!showDealEndDate">When does the deal start?</label>
+        <span fxLayout="row">
+            <mat-form-field class="date start-date">
+                <input (dateChange)="onDealStartDateChange(startDate?.value)"
+                        #startDate matInput [matDatepicker]="startPicker" 
+                        placeholder="choose start date"
+                        formControlName="startDate">
+                <mat-datepicker-toggle matSuffix [for]="startPicker"></mat-datepicker-toggle>
+                <mat-datepicker #startPicker></mat-datepicker>
+            </mat-form-field>
+            <mat-form-field *ngIf="showDealEndDate" class="date">
+                <input #endDate matInput [matDatepicker]="endPicker" 
+                        placeholder="choose end date"
+                        formControlName="endDate">
+                <mat-datepicker-toggle matSuffix [for]="endPicker"></mat-datepicker-toggle>
+                <mat-datepicker #endPicker></mat-datepicker>
+            </mat-form-field>
+        </span>
+        <div fxLayout="row">
+            <span fxLayout="column" fxLayoutAlign="space-between center" class="start-time">
+                <label class="time-label">start time</label>
+                <ngb-timepicker [spinners]="false" formControlName="startTime"></ngb-timepicker>
+            </span>
+            <span *ngIf="showDealEndDate" fxLayout="column" fxLayoutAlign="space-between center">
+                <label class="time-label">end time</label>
+                <ngb-timepicker [spinners]="false" formControlName="endTime"></ngb-timepicker>
+            </span>
+        </div>
+    </div>
+
+    <div *ngIf="showRecurringDeal" class="dealRecurring" fxLayout="row" fxLayoutAlign="space-between start">
+        <div class="form-group" fxLayout="column">
+            <label>Is it recurring?</label>
+            <mat-chip-list>
+                <mat-chip *ngFor="let rdChip of recDealsChips" [selected]="rdChip.selected"
+                        class="chip" (click)="onRecurringDealChange(rdChip)">
+                    {{rdChip.name}}
+                </mat-chip>
+            </mat-chip-list>
+        </div>
+
+        <div *ngIf="showRecurringPeriod" class="form-group occurringTime">
+            <label>When?</label>
+            <select #period (change)="displaySelectDays(period.value)"
+                    type="checkbox" class="period form-control"
+                    formControlName="recurringPeriod">
+                <option selected></option>
+                <option>Weekly</option>
+            </select>
+            <div *ngIf="showSelectDays" formGroupName="recurringDays" fxLayout="row" fxLayoutAlign="space-between center">
+                <mat-checkbox *ngFor="let rd of recDays" class="recDay" 
+                                formControlName="{{rd.day}}" color="primary">
+                    {{rd.day}}
+                </mat-checkbox>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="showDealTitle" class="form-group" fxLayout="column">
+        <label>What's the title of your deal?</label>
+        <span>
+            <input #dealTitle (keyup)="onDealTitleChange(dealTitle.value)" 
+                    class="dealInput dealTitle" type="text"
+                    formControlName="title">
+        </span>
+    </div>
+
+    <div *ngIf="showDealDesc" class="form-group" fxLayout="column">
+        <label>Describe your deal in a sentence or two?</label>
+        <span>
+            <textarea #dealDesc class="dealInput dealDesc"
+                      (keyup)="onDealDescChange(dealDesc.value)"
+                      formControlName="desc"></textarea>
+        </span>
+    </div>
+
+    <div *ngIf="showDealImage" class="form-group" fxLayout="column" >
+        <label>Add an image or two to entice customers</label>
+        <div fxLayout="row">
+            <img class="deal-image" *ngFor="let img of dealImages" src="{{img}}"
+                 title="Click to remove" (click)="removeDealImage(img, file)">
+            <label fxLayoutAlign="center center" for="file-upload" class="file-upload">
+                <span class="fa fa-camera"></span>
+            </label>
+            <input #file id="file-upload" type="file"
+                    (change)="onFileSelected($event)">
+        </div>
+    </div>
+</form>

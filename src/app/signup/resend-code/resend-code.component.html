@@ -1,0 +1,24 @@
+<div *ngIf="loading" class="progress-bar">
+  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</div>
+
+<app-crowds-header></app-crowds-header>
+
+<div class="container pageSize">
+<div class="container all">
+    <div class="form-group">
+        <label class="crowds-form-label">What is your Email?</label>
+        <div class="input-group">
+            <input #email type="email" class="crowds-form-element form-control">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <button (click)="resendCode(email.value)" 
+            type="button" 
+            class="next-btn crowds-form-element btn btn-outline-light"
+            [ngStyle]="{'background': '#3BC269'}">
+      Send
+    </button>
+</div>
+</div>

@@ -1,0 +1,41 @@
+.divider {
+    display: block;
+    position: relative;
+    padding: 0;
+    height: 0;
+    width: 100%;
+    max-height: 0;
+    font-size: 1px;
+    line-height: 0;
+    clear: both;
+    border: none;
+    border-top: 1px solid black;
+}
+
+.metricPos {
+    margin-bottom: -10px;
+    color: rgb(57, 193, 103);
+}
+
+.metricNeg {
+    margin-bottom: -10px;
+    color: rgb(215, 54, 54);
+}
+
+.metricNumBig {
+    font-size: 2em;
+}
+
+.metricNumSmall {
+    font-size: 1em;
+}
+
+.miniText {
+    font-size: 0.6em !important;
+}
+
+.mat-card {
+    width: inherit;
+    height: 420px;
+    overflow: auto;
+}

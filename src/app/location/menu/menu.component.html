@@ -1,0 +1,97 @@
+<div [formGroup]="parentForm">
+  <div [formArrayName]="'menu_items'">
+      <div *ngFor="let category of menu" [formGroupName]="category.id">
+          <div class="whole-card">
+            <div fxLayout="column">  
+                <div class="category-container"
+                     [class.category-container-edit]="editable">
+                  <div *ngIf="editable"
+                       class="subsection-title"
+                       fxLayout="row"
+                       fxLayoutAlign="start end"
+                       (mouseleave)="hideCategoryActions()">
+                       <span (mouseenter)="displayCategoryActions()">
+                         Category
+                        </span>
+                       <div *ngIf="category_mouseenter" class="add-remove">
+                          <div (click)="removeLastCategory(menu)" 
+                              title="remove last category" 
+                              class="remove-item">
+                            <span class="fa fa-minus-circle"></span>
+                          </div>
+                        </div>
+                  </div>
+                  <input  
+                          [formControlName]="'name'"
+                          type="text" 
+                          placeholder="name"
+                          class="category-value" 
+                          value="{{category.name}}">
+                </div>
+                <div class="items-container">
+                  <div *ngIf="editable" 
+                        fxLayout="row" 
+                        fxLayoutAlign="space-between center">
+                      <div class="subsection-title" 
+                            fxLayout="row" 
+                            fxLayoutAlign="space-between end"
+                            (mouseleave)="hideItemActions()">
+                        <span (mouseenter)="displayItemActions()">
+                          Item
+                        </span> 
+                        <div *ngIf="item_mouseenter" class="add-remove" 
+                            fxLayout="row">
+                          <div (click)="removeLastItem(category)" 
+                              title="remove last item" 
+                              class="remove-item">
+                            <span class="fa fa-minus-circle"></span>
+                          </div>
+                          <div (click)="addNewItem(category)" 
+                              title="add new item" 
+                              class="new-item">
+                            <span class="fa fa-plus-circle"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="subsection-title">Price</div>
+                  </div>
+                  
+                  <div [formArrayName]="'items'">
+                      <div *ngFor="let item of category.items" 
+                          class="item-body">
+                          <div [formGroupName]="item.id"
+                              fxLayout="row" 
+                              fxLayoutAlign="space-between start">
+                              <div class="item-container"> 
+                                <input 
+                                        [formControlName]="'name'" 
+                                        type="text" 
+                                        placeholder="name" 
+                                        class="item-name" 
+                                        value="{{item.name}}">
+                                <input 
+                                        [formControlName]="'desc'"
+                                        type="text" 
+                                        placeholder="description" 
+                                        class="item-desc" 
+                                        value="{{item.desc}}">
+                              </div>
+                              <div class="item-price">
+                                <input 
+                                        [formControlName]="'price'"
+                                        type="text" 
+                                        class="item-price-value" 
+                                        value="{{item.price}}">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <br>
+      </div>
+  </div>
+  
+</div>
+

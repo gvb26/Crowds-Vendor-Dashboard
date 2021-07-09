@@ -1,0 +1,18 @@
+<mat-card class="age-demographics">
+    <mat-card-header>
+        <mat-card-title>Age Demographics</mat-card-title>
+        <mat-card-subtitle>November 3, 2018</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-header class="chart">
+        <ngx-charts-bar-vertical
+            [view]="view"
+            [scheme]="colorScheme"
+            [results]="single"
+            [gradient]="gradient"
+            [xAxis]="showXAxis"
+            [yAxis]="showYAxis"
+            (select)="onSelect($event)">
+        </ngx-charts-bar-vertical>
+    </mat-card-header>
+</mat-card>
+

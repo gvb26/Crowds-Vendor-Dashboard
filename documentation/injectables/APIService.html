@@ -1,0 +1,4559 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>crowds-vendor-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">crowds-vendor-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>APIService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/API.service.ts</code>
+        </p>
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#DeleteLocation">DeleteLocation</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#DeleteLocationDeal">DeleteLocationDeal</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#DeleteLocationMenuItem">DeleteLocationMenuItem</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#DeleteUser">DeleteUser</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#DeleteUserCuisineId">DeleteUserCuisineId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#DeleteVendor">DeleteVendor</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#GetCuisineRef">GetCuisineRef</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#GetLocation">GetLocation</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#GetLocationByFilter">GetLocationByFilter</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#GetLocationByVendorId">GetLocationByVendorId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#GetLocationCuisine">GetLocationCuisine</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#GetLocationDeal">GetLocationDeal</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#GetLocationDealsByLocation">GetLocationDealsByLocation</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#GetLocationHours">GetLocationHours</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#GetLocationMenuItem">GetLocationMenuItem</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#GetLocationRadius">GetLocationRadius</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#GetLocationsByZip">GetLocationsByZip</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#GetUser">GetUser</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#GetUserCuisineIDs">GetUserCuisineIDs</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#GetVendor">GetVendor</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#InsertLocation">InsertLocation</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#InsertLocationCuisine">InsertLocationCuisine</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#InsertLocationDeal">InsertLocationDeal</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#InsertLocationHours">InsertLocationHours</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#InsertLocationMenuItem">InsertLocationMenuItem</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#InsertUserCuisineId">InsertUserCuisineId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#UpdateLocation">UpdateLocation</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#UpdateLocationCuisine">UpdateLocationCuisine</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#UpdateLocationDeal">UpdateLocationDeal</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#UpdateLocationHours">UpdateLocationHours</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#UpdateLocationMenuItem">UpdateLocationMenuItem</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#UpdateUser">UpdateUser</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#UpdateVendor">UpdateVendor</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="DeleteLocation"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            DeleteLocation
+                        </b>
+                        <a href="#DeleteLocation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>DeleteLocation(p_vendorID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, p_locationID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="1220"
+                            class="link-to-prism">src/app/API.service.ts:1220</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>p_vendorID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>p_locationID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Location.html" target="_self" >Promise&lt;DeleteLocationMutation&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="DeleteLocationDeal"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            DeleteLocationDeal
+                        </b>
+                        <a href="#DeleteLocationDeal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>DeleteLocationDeal(p_locationID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, p_locationDealID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="1299"
+                            class="link-to-prism">src/app/API.service.ts:1299</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>p_locationID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>p_locationDealID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Location.html" target="_self" >Promise&lt;DeleteLocationDealMutation&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="DeleteLocationMenuItem"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            DeleteLocationMenuItem
+                        </b>
+                        <a href="#DeleteLocationMenuItem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>DeleteLocationMenuItem(p_vendorID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, p_locationMenuItemID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="1274"
+                            class="link-to-prism">src/app/API.service.ts:1274</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>p_vendorID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>p_locationMenuItemID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#DeleteLocationMenuItemMutation" target="_self" >Promise&lt;DeleteLocationMenuItemMutation&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="DeleteUser"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            DeleteUser
+                        </b>
+                        <a href="#DeleteUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>DeleteUser(p_userID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="1190"
+                            class="link-to-prism">src/app/API.service.ts:1190</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>p_userID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#DeleteUserMutation" target="_self" >Promise&lt;DeleteUserMutation&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="DeleteUserCuisineId"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            DeleteUserCuisineId
+                        </b>
+                        <a href="#DeleteUserCuisineId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>DeleteUserCuisineId(p_awsToken: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, p_cuisineID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="828"
+                            class="link-to-prism">src/app/API.service.ts:828</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>p_awsToken</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>p_cuisineID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Cuisine.html" target="_self" >Promise&lt;DeleteUserCuisineIdMutation&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="DeleteVendor"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            DeleteVendor
+                        </b>
+                        <a href="#DeleteVendor"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>DeleteVendor(p_vendorID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="1169"
+                            class="link-to-prism">src/app/API.service.ts:1169</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>p_vendorID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#DeleteVendorMutation" target="_self" >Promise&lt;DeleteVendorMutation&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GetCuisineRef"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            GetCuisineRef
+                        </b>
+                        <a href="#GetCuisineRef"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>GetCuisineRef()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="1552"
+                            class="link-to-prism">src/app/API.service.ts:1552</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Cuisine.html" target="_self" >Promise&lt;GetCuisineRefQuery&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GetLocation"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            GetLocation
+                        </b>
+                        <a href="#GetLocation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>GetLocation(p_locationID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="1400"
+                            class="link-to-prism">src/app/API.service.ts:1400</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>p_locationID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Location.html" target="_self" >Promise&lt;GetLocationQuery&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GetLocationByFilter"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            GetLocationByFilter
+                        </b>
+                        <a href="#GetLocationByFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>GetLocationByFilter(input?: <a href="../interfaces/Location.html">LocationGetByFilterInput</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="1686"
+                            class="link-to-prism">src/app/API.service.ts:1686</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>input</td>
+                                    <td>
+                                                <code><a href="../interfaces/Location.html" target="_self" >LocationGetByFilterInput</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Location.html" target="_self" >Promise&lt;GetLocationByFilterQuery&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GetLocationByVendorId"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            GetLocationByVendorId
+                        </b>
+                        <a href="#GetLocationByVendorId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>GetLocationByVendorId(p_vendorID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="1450"
+                            class="link-to-prism">src/app/API.service.ts:1450</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>p_vendorID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#GetLocationByVendorIdQuery" target="_self" >Promise&lt;GetLocationByVendorIdQuery&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GetLocationCuisine"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            GetLocationCuisine
+                        </b>
+                        <a href="#GetLocationCuisine"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>GetLocationCuisine(p_locationID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="1781"
+                            class="link-to-prism">src/app/API.service.ts:1781</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>p_locationID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#GetLocationCuisineQuery" target="_self" >Promise&lt;GetLocationCuisineQuery&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GetLocationDeal"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            GetLocationDeal
+                        </b>
+                        <a href="#GetLocationDeal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>GetLocationDeal(p_locationDealID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="1598"
+                            class="link-to-prism">src/app/API.service.ts:1598</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>p_locationDealID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Location.html" target="_self" >Promise&lt;GetLocationDealQuery&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GetLocationDealsByLocation"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            GetLocationDealsByLocation
+                        </b>
+                        <a href="#GetLocationDealsByLocation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>GetLocationDealsByLocation(p_locationID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="1564"
+                            class="link-to-prism">src/app/API.service.ts:1564</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>p_locationID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Location.html" target="_self" >Promise&lt;GetLocationDealsByLocationQuery&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GetLocationHours"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            GetLocationHours
+                        </b>
+                        <a href="#GetLocationHours"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>GetLocationHours(p_locationID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="1739"
+                            class="link-to-prism">src/app/API.service.ts:1739</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>p_locationID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#GetLocationHoursQuery" target="_self" >Promise&lt;GetLocationHoursQuery&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GetLocationMenuItem"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            GetLocationMenuItem
+                        </b>
+                        <a href="#GetLocationMenuItem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>GetLocationMenuItem(p_locationID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="1758"
+                            class="link-to-prism">src/app/API.service.ts:1758</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>p_locationID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#GetLocationMenuItemQuery" target="_self" >Promise&lt;GetLocationMenuItemQuery&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GetLocationRadius"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            GetLocationRadius
+                        </b>
+                        <a href="#GetLocationRadius"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>GetLocationRadius(p_lat: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, p_lng: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, p_radius: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="1630"
+                            class="link-to-prism">src/app/API.service.ts:1630</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>p_lat</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>p_lng</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>p_radius</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Location.html" target="_self" >Promise&lt;GetLocationRadiusQuery&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GetLocationsByZip"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            GetLocationsByZip
+                        </b>
+                        <a href="#GetLocationsByZip"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>GetLocationsByZip(p_zipCode: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="1502"
+                            class="link-to-prism">src/app/API.service.ts:1502</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>p_zipCode</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#GetLocationsByZipQuery" target="_self" >Promise&lt;GetLocationsByZipQuery&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GetUser"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            GetUser
+                        </b>
+                        <a href="#GetUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>GetUser(p_awsToken: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="1333"
+                            class="link-to-prism">src/app/API.service.ts:1333</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>p_awsToken</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#GetUserQuery" target="_self" >Promise&lt;GetUserQuery&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GetUserCuisineIDs"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            GetUserCuisineIDs
+                        </b>
+                        <a href="#GetUserCuisineIDs"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>GetUserCuisineIDs(p_awsToken: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="1363"
+                            class="link-to-prism">src/app/API.service.ts:1363</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>p_awsToken</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Cuisine.html" target="_self" >Promise&lt;GetUserCuisineIDsQuery&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GetVendor"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            GetVendor
+                        </b>
+                        <a href="#GetVendor"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>GetVendor(p_awsToken: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="1379"
+                            class="link-to-prism">src/app/API.service.ts:1379</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>p_awsToken</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#GetVendorQuery" target="_self" >Promise&lt;GetVendorQuery&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="InsertLocation"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            InsertLocation
+                        </b>
+                        <a href="#InsertLocation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>InsertLocation(input: <a href="../interfaces/Location.html">LocationInsertInput</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="877"
+                            class="link-to-prism">src/app/API.service.ts:877</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>input</td>
+                                    <td>
+                                                <code><a href="../interfaces/Location.html" target="_self" >LocationInsertInput</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Location.html" target="_self" >Promise&lt;InsertLocationMutation&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="InsertLocationCuisine"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            InsertLocationCuisine
+                        </b>
+                        <a href="#InsertLocationCuisine"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>InsertLocationCuisine(input: <a href="../undefineds/LocationCuisineInsertInput.html">LocationCuisineInsertInput</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="1133"
+                            class="link-to-prism">src/app/API.service.ts:1133</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>input</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/typealiases.html#LocationCuisineInsertInput" target="_self" >LocationCuisineInsertInput</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#InsertLocationCuisineMutation" target="_self" >Promise&lt;InsertLocationCuisineMutation&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="InsertLocationDeal"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            InsertLocationDeal
+                        </b>
+                        <a href="#InsertLocationDeal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>InsertLocationDeal(input: <a href="../interfaces/Location.html">LocationDealInsertInput</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="981"
+                            class="link-to-prism">src/app/API.service.ts:981</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>input</td>
+                                    <td>
+                                                <code><a href="../interfaces/Location.html" target="_self" >LocationDealInsertInput</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Location.html" target="_self" >Promise&lt;InsertLocationDealMutation&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="InsertLocationHours"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            InsertLocationHours
+                        </b>
+                        <a href="#InsertLocationHours"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>InsertLocationHours(input: <a href="../undefineds/LocationHoursInsertInput.html">LocationHoursInsertInput</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="1045"
+                            class="link-to-prism">src/app/API.service.ts:1045</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>input</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/typealiases.html#LocationHoursInsertInput" target="_self" >LocationHoursInsertInput</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#InsertLocationHoursMutation" target="_self" >Promise&lt;InsertLocationHoursMutation&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="InsertLocationMenuItem"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            InsertLocationMenuItem
+                        </b>
+                        <a href="#InsertLocationMenuItem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>InsertLocationMenuItem(input: <a href="../undefineds/LocationMenuItemInsertInput.html">LocationMenuItemInsertInput</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="1087"
+                            class="link-to-prism">src/app/API.service.ts:1087</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>input</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/typealiases.html#LocationMenuItemInsertInput" target="_self" >LocationMenuItemInsertInput</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#InsertLocationMenuItemMutation" target="_self" >Promise&lt;InsertLocationMenuItemMutation&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="InsertUserCuisineId"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            InsertUserCuisineId
+                        </b>
+                        <a href="#InsertUserCuisineId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>InsertUserCuisineId(p_awsToken: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, p_cuisineID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="808"
+                            class="link-to-prism">src/app/API.service.ts:808</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>p_awsToken</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>p_cuisineID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Cuisine.html" target="_self" >Promise&lt;InsertUserCuisineIdMutation&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="UpdateLocation"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            UpdateLocation
+                        </b>
+                        <a href="#UpdateLocation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>UpdateLocation(input: <a href="../interfaces/Location.html">LocationUpdateInput</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="929"
+                            class="link-to-prism">src/app/API.service.ts:929</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>input</td>
+                                    <td>
+                                                <code><a href="../interfaces/Location.html" target="_self" >LocationUpdateInput</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Location.html" target="_self" >Promise&lt;UpdateLocationMutation&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="UpdateLocationCuisine"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            UpdateLocationCuisine
+                        </b>
+                        <a href="#UpdateLocationCuisine"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>UpdateLocationCuisine(input: <a href="../undefineds/LocationCuisineUpdateInput.html">LocationCuisineUpdateInput</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="1151"
+                            class="link-to-prism">src/app/API.service.ts:1151</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>input</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/typealiases.html#LocationCuisineUpdateInput" target="_self" >LocationCuisineUpdateInput</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#UpdateLocationCuisineMutation" target="_self" >Promise&lt;UpdateLocationCuisineMutation&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="UpdateLocationDeal"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            UpdateLocationDeal
+                        </b>
+                        <a href="#UpdateLocationDeal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>UpdateLocationDeal(input: <a href="../interfaces/Location.html">LocationDealUpdateInput</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="1013"
+                            class="link-to-prism">src/app/API.service.ts:1013</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>input</td>
+                                    <td>
+                                                <code><a href="../interfaces/Location.html" target="_self" >LocationDealUpdateInput</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Location.html" target="_self" >Promise&lt;UpdateLocationDealMutation&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="UpdateLocationHours"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            UpdateLocationHours
+                        </b>
+                        <a href="#UpdateLocationHours"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>UpdateLocationHours(input: <a href="../undefineds/LocationHoursUpdateInput.html">LocationHoursUpdateInput</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="1066"
+                            class="link-to-prism">src/app/API.service.ts:1066</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>input</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/typealiases.html#LocationHoursUpdateInput" target="_self" >LocationHoursUpdateInput</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#UpdateLocationHoursMutation" target="_self" >Promise&lt;UpdateLocationHoursMutation&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="UpdateLocationMenuItem"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            UpdateLocationMenuItem
+                        </b>
+                        <a href="#UpdateLocationMenuItem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>UpdateLocationMenuItem(input: <a href="../undefineds/LocationMenuItemUpdateInput.html">LocationMenuItemUpdateInput</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="1110"
+                            class="link-to-prism">src/app/API.service.ts:1110</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>input</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/typealiases.html#LocationMenuItemUpdateInput" target="_self" >LocationMenuItemUpdateInput</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#UpdateLocationMenuItemMutation" target="_self" >Promise&lt;UpdateLocationMenuItemMutation&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="UpdateUser"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            UpdateUser
+                        </b>
+                        <a href="#UpdateUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>UpdateUser(input: <a href="../undefineds/UserUpdateInput.html">UserUpdateInput</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="778"
+                            class="link-to-prism">src/app/API.service.ts:778</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>input</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/typealiases.html#UserUpdateInput" target="_self" >UserUpdateInput</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#UpdateUserMutation" target="_self" >Promise&lt;UpdateUserMutation&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="UpdateVendor"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            UpdateVendor
+                        </b>
+                        <a href="#UpdateVendor"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>UpdateVendor(p_awsToken: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, p_firstName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, p_lastName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, p_phoneNumber: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="848"
+                            class="link-to-prism">src/app/API.service.ts:848</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>p_awsToken</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>p_firstName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>p_lastName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>p_phoneNumber</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#UpdateVendorMutation" target="_self" >Promise&lt;UpdateVendorMutation&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &quot;@angular/core&quot;;
+import API, { graphqlOperation } from &quot;@aws-amplify/api&quot;;
+import { GraphQLResult } from &quot;@aws-amplify/api/lib/types&quot;;
+import * as Observable from &quot;zen-observable&quot;;
+
+export type UserUpdateInput &#x3D; {
+  p_awsToken: string;
+  p_firstName: string;
+  p_lastName: string;
+  p_profilePhoto: string;
+  p_city: string;
+  p_state: string;
+  p_zipCode: string;
+  p_streetAddress: string;
+  p_dateOfBirth: string;
+  p_genderID: number;
+};
+
+export type LocationInsertInput &#x3D; {
+  p_name: string;
+  p_vendorID: number;
+  p_budgetID: number;
+  p_locationTypeID: number;
+  p_totalCapacity: number;
+  p_city: string;
+  p_state: string;
+  p_zipCode: string;
+  p_lat: number;
+  p_lng: number;
+  p_streetAddress: string;
+  p_phoneNumber: string;
+  p_website: string;
+  p_moreInformation: string;
+};
+
+export type LocationUpdateInput &#x3D; {
+  p_name: string;
+  p_vendorID: number;
+  p_locationID: string;
+  p_budgetID: number;
+  p_locationTypeID: number;
+  p_totalCapacity: number;
+  p_city: string;
+  p_state: string;
+  p_zipCode: string;
+  p_lat: number;
+  p_lng: number;
+  p_streetAddress: string;
+  p_phoneNumber: string;
+  p_website: string;
+  p_moreInformation: string;
+  p_statusID: number;
+};
+
+export type LocationDealInsertInput &#x3D; {
+  p_locationID: number;
+  p_dealTypeID: number;
+  p_discountTypeID: number;
+  p_name: string;
+  p_description: string;
+  p_valueOff?: number | null;
+  p_finePrint?: string | null;
+  p_featuredImage?: string | null;
+  p_startDate: string;
+  p_endDate?: string | null;
+  p_recurring: boolean;
+  p_recurringFrequencyID?: number | null;
+  p_startTime: string;
+  p_endTime: string;
+  p_statusID: number;
+};
+
+export type LocationDealUpdateInput &#x3D; {
+  p_locationDealID: number;
+  p_locationID: number;
+  p_dealTypeID: number;
+  p_discountTypeID: number;
+  p_name: string;
+  p_description: string;
+  p_valueOff?: number | null;
+  p_finePrint?: string | null;
+  p_featuredImage?: string | null;
+  p_startDate: string;
+  p_endDate?: string | null;
+  p_recurring: boolean;
+  p_recurringFrequencyID?: number | null;
+  p_startTime: string;
+  p_endTime: string;
+  p_statusID: number;
+};
+
+export type LocationHoursInsertInput &#x3D; {
+  p_locationID: number;
+  p_dayOfTheWeekID: number;
+  p_openTime: string;
+  p_closeTime: string;
+};
+
+export type LocationHoursUpdateInput &#x3D; {
+  p_locationID: number;
+  p_dayOfTheWeekID: number;
+  p_openTime: string;
+  p_closeTime: string;
+};
+
+export type LocationMenuItemInsertInput &#x3D; {
+  p_locationID: number;
+  p_menuCategoryID: number;
+  p_name: string;
+  p_description?: string | null;
+  p_price?: number | null;
+  p_photo?: string | null;
+};
+
+export type LocationMenuItemUpdateInput &#x3D; {
+  p_locationID: number;
+  p_menuCategoryID: number;
+  p_name: string;
+  p_description?: string | null;
+  p_price?: number | null;
+  p_photo?: string | null;
+};
+
+export type LocationCuisineInsertInput &#x3D; {
+  p_locationID: number;
+  p_cuisineID: number;
+};
+
+export type LocationCuisineUpdateInput &#x3D; {
+  p_locationID: number;
+  p_cuisineID: number;
+};
+
+export type LocationGetByFilterInput &#x3D; {
+  p_lat: number;
+  p_lng: number;
+  p_radius: number;
+  p_crowdslevelId?: number | null;
+  p_locationtypeId?: number | null;
+  p_dealtypeId?: number | null;
+  p_cuisinetypeId?: number | null;
+  p_budgetId?: number | null;
+};
+
+export type UpdateUserMutation &#x3D; {
+  __typename: string;
+  userID: number | null;
+  accountID: number | null;
+  accountTypeID: number | null;
+  statusID: number | null;
+  budgetID: number | null;
+  restaurantCrowdsLevelID: number | null;
+  barCrowdsLevelID: number | null;
+  firstName: string | null;
+  lastName: string | null;
+  profilePhoto: string | null;
+  dateOfBirth: string | null;
+  genderID: number | null;
+  city: string | null;
+  state: string | null;
+  zipCode: string | null;
+  streetAddress: string | null;
+};
+
+export type InsertUserCuisineIdMutation &#x3D; {
+  __typename: string;
+  userID: number | null;
+  cuisineID: number | null;
+};
+
+export type DeleteUserCuisineIdMutation &#x3D; {
+  __typename: string;
+  userID: number | null;
+  cuisineID: number | null;
+};
+
+export type UpdateVendorMutation &#x3D; {
+  __typename: string;
+  vendorID: number | null;
+  accountID: number | null;
+  firstName: string | null;
+  lastName: string | null;
+  phoneNumber: string | null;
+  accountTypeID: number | null;
+  statusID: number | null;
+};
+
+export type InsertLocationMutation &#x3D; {
+  __typename: string;
+  locationID: number | null;
+  name: string | null;
+  vendorID: number | null;
+  budgetID: number | null;
+  locationTypeID: number | null;
+  crowdsLevelID: number | null;
+  totalCapacity: number | null;
+  city: string | null;
+  state: string | null;
+  zipCode: string | null;
+  lat: number | null;
+  lng: number | null;
+  streetAddress: string | null;
+  phoneNumber: string | null;
+  website: string | null;
+  moreInformation: string | null;
+  statusID: number | null;
+  Deals: Array&lt;{
+    __typename: &quot;LocationDeal&quot;;
+    locationDealID: number;
+    locationID: number | null;
+    dealTypeID: number | null;
+    discountTypeID: number | null;
+    name: string | null;
+    description: string | null;
+    valueOff: number | null;
+    finePrint: string | null;
+    featuredImage: string | null;
+    startDate: string | null;
+    endDate: string | null;
+    recurring: boolean | null;
+    recurringFrequencyID: number | null;
+    startTime: string | null;
+    endTime: string | null;
+    statusID: number | null;
+  } | null&gt; | null;
+};
+
+export type UpdateLocationMutation &#x3D; {
+  __typename: string;
+  locationID: number | null;
+  name: string | null;
+  vendorID: number | null;
+  budgetID: number | null;
+  locationTypeID: number | null;
+  crowdsLevelID: number | null;
+  totalCapacity: number | null;
+  city: string | null;
+  state: string | null;
+  zipCode: string | null;
+  lat: number | null;
+  lng: number | null;
+  streetAddress: string | null;
+  phoneNumber: string | null;
+  website: string | null;
+  moreInformation: string | null;
+  statusID: number | null;
+  Deals: Array&lt;{
+    __typename: &quot;LocationDeal&quot;;
+    locationDealID: number;
+    locationID: number | null;
+    dealTypeID: number | null;
+    discountTypeID: number | null;
+    name: string | null;
+    description: string | null;
+    valueOff: number | null;
+    finePrint: string | null;
+    featuredImage: string | null;
+    startDate: string | null;
+    endDate: string | null;
+    recurring: boolean | null;
+    recurringFrequencyID: number | null;
+    startTime: string | null;
+    endTime: string | null;
+    statusID: number | null;
+  } | null&gt; | null;
+};
+
+export type InsertLocationDealMutation &#x3D; {
+  __typename: string;
+  locationDealID: number;
+  locationID: number | null;
+  dealTypeID: number | null;
+  discountTypeID: number | null;
+  name: string | null;
+  description: string | null;
+  valueOff: number | null;
+  finePrint: string | null;
+  featuredImage: string | null;
+  startDate: string | null;
+  endDate: string | null;
+  recurring: boolean | null;
+  recurringFrequencyID: number | null;
+  startTime: string | null;
+  endTime: string | null;
+  statusID: number | null;
+};
+
+export type UpdateLocationDealMutation &#x3D; {
+  __typename: string;
+  locationDealID: number;
+  locationID: number | null;
+  dealTypeID: number | null;
+  discountTypeID: number | null;
+  name: string | null;
+  description: string | null;
+  valueOff: number | null;
+  finePrint: string | null;
+  featuredImage: string | null;
+  startDate: string | null;
+  endDate: string | null;
+  recurring: boolean | null;
+  recurringFrequencyID: number | null;
+  startTime: string | null;
+  endTime: string | null;
+  statusID: number | null;
+};
+
+export type InsertLocationHoursMutation &#x3D; {
+  __typename: string;
+  locationHoursID: number | null;
+  locationID: number | null;
+  dayOfTheWeekID: number | null;
+  openTime: string | null;
+  closeTime: string | null;
+};
+
+export type UpdateLocationHoursMutation &#x3D; {
+  __typename: string;
+  locationHoursID: number | null;
+  locationID: number | null;
+  dayOfTheWeekID: number | null;
+  openTime: string | null;
+  closeTime: string | null;
+};
+
+export type InsertLocationMenuItemMutation &#x3D; {
+  __typename: string;
+  locationMenuItemID: number | null;
+  locationID: number | null;
+  menuCategoryID: number | null;
+  name: string | null;
+  description: string | null;
+  price: number | null;
+  photo: string | null;
+};
+
+export type UpdateLocationMenuItemMutation &#x3D; {
+  __typename: string;
+  locationMenuItemID: number | null;
+  locationID: number | null;
+  menuCategoryID: number | null;
+  name: string | null;
+  description: string | null;
+  price: number | null;
+  photo: string | null;
+};
+
+export type InsertLocationCuisineMutation &#x3D; {
+  __typename: string;
+  locationID: number | null;
+  cuisineID: number | null;
+};
+
+export type UpdateLocationCuisineMutation &#x3D; {
+  __typename: string;
+  locationID: number | null;
+  cuisineID: number | null;
+};
+
+export type DeleteVendorMutation &#x3D; {
+  __typename: string;
+  vendorID: number | null;
+  accountID: number | null;
+  firstName: string | null;
+  lastName: string | null;
+  phoneNumber: string | null;
+  accountTypeID: number | null;
+  statusID: number | null;
+};
+
+export type DeleteUserMutation &#x3D; {
+  __typename: string;
+  userID: number | null;
+  accountID: number | null;
+  accountTypeID: number | null;
+  statusID: number | null;
+  budgetID: number | null;
+  restaurantCrowdsLevelID: number | null;
+  barCrowdsLevelID: number | null;
+  firstName: string | null;
+  lastName: string | null;
+  profilePhoto: string | null;
+  dateOfBirth: string | null;
+  genderID: number | null;
+  city: string | null;
+  state: string | null;
+  zipCode: string | null;
+  streetAddress: string | null;
+};
+
+export type DeleteLocationMutation &#x3D; {
+  __typename: string;
+  locationID: number | null;
+  name: string | null;
+  vendorID: number | null;
+  budgetID: number | null;
+  locationTypeID: number | null;
+  crowdsLevelID: number | null;
+  totalCapacity: number | null;
+  city: string | null;
+  state: string | null;
+  zipCode: string | null;
+  lat: number | null;
+  lng: number | null;
+  streetAddress: string | null;
+  phoneNumber: string | null;
+  website: string | null;
+  moreInformation: string | null;
+  statusID: number | null;
+  Deals: Array&lt;{
+    __typename: &quot;LocationDeal&quot;;
+    locationDealID: number;
+    locationID: number | null;
+    dealTypeID: number | null;
+    discountTypeID: number | null;
+    name: string | null;
+    description: string | null;
+    valueOff: number | null;
+    finePrint: string | null;
+    featuredImage: string | null;
+    startDate: string | null;
+    endDate: string | null;
+    recurring: boolean | null;
+    recurringFrequencyID: number | null;
+    startTime: string | null;
+    endTime: string | null;
+    statusID: number | null;
+  } | null&gt; | null;
+};
+
+export type DeleteLocationMenuItemMutation &#x3D; {
+  __typename: string;
+  locationMenuItemID: number | null;
+  locationID: number | null;
+  menuCategoryID: number | null;
+  name: string | null;
+  description: string | null;
+  price: number | null;
+  photo: string | null;
+};
+
+export type DeleteLocationDealMutation &#x3D; {
+  __typename: string;
+  locationDealID: number;
+  locationID: number | null;
+  dealTypeID: number | null;
+  discountTypeID: number | null;
+  name: string | null;
+  description: string | null;
+  valueOff: number | null;
+  finePrint: string | null;
+  featuredImage: string | null;
+  startDate: string | null;
+  endDate: string | null;
+  recurring: boolean | null;
+  recurringFrequencyID: number | null;
+  startTime: string | null;
+  endTime: string | null;
+  statusID: number | null;
+};
+
+export type GetUserQuery &#x3D; {
+  __typename: string;
+  userID: number | null;
+  accountID: number | null;
+  accountTypeID: number | null;
+  statusID: number | null;
+  budgetID: number | null;
+  restaurantCrowdsLevelID: number | null;
+  barCrowdsLevelID: number | null;
+  firstName: string | null;
+  lastName: string | null;
+  profilePhoto: string | null;
+  dateOfBirth: string | null;
+  genderID: number | null;
+  city: string | null;
+  state: string | null;
+  zipCode: string | null;
+  streetAddress: string | null;
+};
+
+export type GetUserCuisineIDsQuery &#x3D; {
+  __typename: string;
+  userID: number | null;
+  cuisineID: number | null;
+};
+
+export type GetVendorQuery &#x3D; {
+  __typename: string;
+  vendorID: number | null;
+  accountID: number | null;
+  firstName: string | null;
+  lastName: string | null;
+  phoneNumber: string | null;
+  accountTypeID: number | null;
+  statusID: number | null;
+};
+
+export type GetLocationQuery &#x3D; {
+  __typename: string;
+  locationID: number | null;
+  name: string | null;
+  vendorID: number | null;
+  budgetID: number | null;
+  locationTypeID: number | null;
+  crowdsLevelID: number | null;
+  totalCapacity: number | null;
+  city: string | null;
+  state: string | null;
+  zipCode: string | null;
+  lat: number | null;
+  lng: number | null;
+  streetAddress: string | null;
+  phoneNumber: string | null;
+  website: string | null;
+  moreInformation: string | null;
+  statusID: number | null;
+  Deals: Array&lt;{
+    __typename: &quot;LocationDeal&quot;;
+    locationDealID: number;
+    locationID: number | null;
+    dealTypeID: number | null;
+    discountTypeID: number | null;
+    name: string | null;
+    description: string | null;
+    valueOff: number | null;
+    finePrint: string | null;
+    featuredImage: string | null;
+    startDate: string | null;
+    endDate: string | null;
+    recurring: boolean | null;
+    recurringFrequencyID: number | null;
+    startTime: string | null;
+    endTime: string | null;
+    statusID: number | null;
+  } | null&gt; | null;
+};
+
+export type GetLocationByVendorIdQuery &#x3D; {
+  __typename: string;
+  locationID: number | null;
+  name: string | null;
+  vendorID: number | null;
+  budgetID: number | null;
+  locationTypeID: number | null;
+  crowdsLevelID: number | null;
+  totalCapacity: number | null;
+  city: string | null;
+  state: string | null;
+  zipCode: string | null;
+  lat: number | null;
+  lng: number | null;
+  streetAddress: string | null;
+  phoneNumber: string | null;
+  website: string | null;
+  moreInformation: string | null;
+  statusID: number | null;
+  Deals: Array&lt;{
+    __typename: &quot;LocationDeal&quot;;
+    locationDealID: number;
+    locationID: number | null;
+    dealTypeID: number | null;
+    discountTypeID: number | null;
+    name: string | null;
+    description: string | null;
+    valueOff: number | null;
+    finePrint: string | null;
+    featuredImage: string | null;
+    startDate: string | null;
+    endDate: string | null;
+    recurring: boolean | null;
+    recurringFrequencyID: number | null;
+    startTime: string | null;
+    endTime: string | null;
+    statusID: number | null;
+  } | null&gt; | null;
+};
+
+export type GetLocationsByZipQuery &#x3D; {
+  __typename: string;
+  locationID: number | null;
+  name: string | null;
+  vendorID: number | null;
+  budgetID: number | null;
+  locationTypeID: number | null;
+  crowdsLevelID: number | null;
+  totalCapacity: number | null;
+  city: string | null;
+  state: string | null;
+  zipCode: string | null;
+  lat: number | null;
+  lng: number | null;
+  streetAddress: string | null;
+  phoneNumber: string | null;
+  website: string | null;
+  moreInformation: string | null;
+  statusID: number | null;
+  Deals: Array&lt;{
+    __typename: &quot;LocationDeal&quot;;
+    locationDealID: number;
+    locationID: number | null;
+    dealTypeID: number | null;
+    discountTypeID: number | null;
+    name: string | null;
+    description: string | null;
+    valueOff: number | null;
+    finePrint: string | null;
+    featuredImage: string | null;
+    startDate: string | null;
+    endDate: string | null;
+    recurring: boolean | null;
+    recurringFrequencyID: number | null;
+    startTime: string | null;
+    endTime: string | null;
+    statusID: number | null;
+  } | null&gt; | null;
+};
+
+export type GetCuisineRefQuery &#x3D; {
+  __typename: string;
+  cuisineID: number | null;
+  name: string | null;
+  description: string | null;
+};
+
+export type GetLocationDealsByLocationQuery &#x3D; {
+  __typename: string;
+  locationDealID: number;
+  locationID: number | null;
+  dealTypeID: number | null;
+  discountTypeID: number | null;
+  name: string | null;
+  description: string | null;
+  valueOff: number | null;
+  finePrint: string | null;
+  featuredImage: string | null;
+  startDate: string | null;
+  endDate: string | null;
+  recurring: boolean | null;
+  recurringFrequencyID: number | null;
+  startTime: string | null;
+  endTime: string | null;
+  statusID: number | null;
+};
+
+export type GetLocationDealQuery &#x3D; {
+  __typename: string;
+  locationDealID: number;
+  locationID: number | null;
+  dealTypeID: number | null;
+  discountTypeID: number | null;
+  name: string | null;
+  description: string | null;
+  valueOff: number | null;
+  finePrint: string | null;
+  featuredImage: string | null;
+  startDate: string | null;
+  endDate: string | null;
+  recurring: boolean | null;
+  recurringFrequencyID: number | null;
+  startTime: string | null;
+  endTime: string | null;
+  statusID: number | null;
+};
+
+export type GetLocationRadiusQuery &#x3D; {
+  __typename: string;
+  locationID: number | null;
+  name: string | null;
+  vendorID: number | null;
+  budgetID: number | null;
+  locationTypeID: number | null;
+  crowdsLevelID: number | null;
+  totalCapacity: number | null;
+  city: string | null;
+  state: string | null;
+  zipCode: string | null;
+  lat: number | null;
+  lng: number | null;
+  streetAddress: string | null;
+  phoneNumber: string | null;
+  website: string | null;
+  moreInformation: string | null;
+  statusID: number | null;
+  Deals: Array&lt;{
+    __typename: &quot;LocationDeal&quot;;
+    locationDealID: number;
+    locationID: number | null;
+    dealTypeID: number | null;
+    discountTypeID: number | null;
+    name: string | null;
+    description: string | null;
+    valueOff: number | null;
+    finePrint: string | null;
+    featuredImage: string | null;
+    startDate: string | null;
+    endDate: string | null;
+    recurring: boolean | null;
+    recurringFrequencyID: number | null;
+    startTime: string | null;
+    endTime: string | null;
+    statusID: number | null;
+  } | null&gt; | null;
+};
+
+export type GetLocationByFilterQuery &#x3D; {
+  __typename: string;
+  locationID: number | null;
+  name: string | null;
+  vendorID: number | null;
+  budgetID: number | null;
+  locationTypeID: number | null;
+  crowdsLevelID: number | null;
+  totalCapacity: number | null;
+  city: string | null;
+  state: string | null;
+  zipCode: string | null;
+  lat: number | null;
+  lng: number | null;
+  streetAddress: string | null;
+  phoneNumber: string | null;
+  website: string | null;
+  moreInformation: string | null;
+  statusID: number | null;
+  Deals: Array&lt;{
+    __typename: &quot;LocationDeal&quot;;
+    locationDealID: number;
+    locationID: number | null;
+    dealTypeID: number | null;
+    discountTypeID: number | null;
+    name: string | null;
+    description: string | null;
+    valueOff: number | null;
+    finePrint: string | null;
+    featuredImage: string | null;
+    startDate: string | null;
+    endDate: string | null;
+    recurring: boolean | null;
+    recurringFrequencyID: number | null;
+    startTime: string | null;
+    endTime: string | null;
+    statusID: number | null;
+  } | null&gt; | null;
+};
+
+export type GetLocationHoursQuery &#x3D; {
+  __typename: string;
+  locationHoursID: number | null;
+  locationID: number | null;
+  dayOfTheWeekID: number | null;
+  openTime: string | null;
+  closeTime: string | null;
+};
+
+export type GetLocationMenuItemQuery &#x3D; {
+  __typename: string;
+  locationMenuItemID: number | null;
+  locationID: number | null;
+  menuCategoryID: number | null;
+  name: string | null;
+  description: string | null;
+  price: number | null;
+  photo: string | null;
+};
+
+export type GetLocationCuisineQuery &#x3D; {
+  __typename: string;
+  locationID: number | null;
+  cuisineID: number | null;
+};
+
+@Injectable({
+  providedIn: &quot;root&quot;
+})
+export class APIService {
+  async UpdateUser(input: UserUpdateInput): Promise&lt;UpdateUserMutation&gt; {
+    const statement &#x3D; &#x60;mutation UpdateUser($input: UserUpdateInput!) {
+        updateUser(input: $input) {
+          __typename
+          userID
+          accountID
+          accountTypeID
+          statusID
+          budgetID
+          restaurantCrowdsLevelID
+          barCrowdsLevelID
+          firstName
+          lastName
+          profilePhoto
+          dateOfBirth
+          genderID
+          city
+          state
+          zipCode
+          streetAddress
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      input
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;UpdateUserMutation&gt;response.data.updateUser;
+  }
+  async InsertUserCuisineId(
+    p_awsToken: string,
+    p_cuisineID: number
+  ): Promise&lt;InsertUserCuisineIdMutation&gt; {
+    const statement &#x3D; &#x60;mutation InsertUserCuisineId($p_awsToken: String!, $p_cuisineID: Int!) {
+        insertUserCuisineID(p_awsToken: $p_awsToken, p_cuisineID: $p_cuisineID) {
+          __typename
+          userID
+          cuisineID
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      p_awsToken,
+      p_cuisineID
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;InsertUserCuisineIdMutation&gt;response.data.insertUserCuisineID;
+  }
+  async DeleteUserCuisineId(
+    p_awsToken: string,
+    p_cuisineID: number
+  ): Promise&lt;DeleteUserCuisineIdMutation&gt; {
+    const statement &#x3D; &#x60;mutation DeleteUserCuisineId($p_awsToken: String!, $p_cuisineID: Int!) {
+        deleteUserCuisineID(p_awsToken: $p_awsToken, p_cuisineID: $p_cuisineID) {
+          __typename
+          userID
+          cuisineID
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      p_awsToken,
+      p_cuisineID
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;DeleteUserCuisineIdMutation&gt;response.data.deleteUserCuisineID;
+  }
+  async UpdateVendor(
+    p_awsToken: string,
+    p_firstName: string,
+    p_lastName: string,
+    p_phoneNumber: string
+  ): Promise&lt;UpdateVendorMutation&gt; {
+    const statement &#x3D; &#x60;mutation UpdateVendor($p_awsToken: String!, $p_firstName: String!, $p_lastName: String!, $p_phoneNumber: String!) {
+        updateVendor(p_awsToken: $p_awsToken, p_firstName: $p_firstName, p_lastName: $p_lastName, p_phoneNumber: $p_phoneNumber) {
+          __typename
+          vendorID
+          accountID
+          firstName
+          lastName
+          phoneNumber
+          accountTypeID
+          statusID
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      p_awsToken,
+      p_firstName,
+      p_lastName,
+      p_phoneNumber
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;UpdateVendorMutation&gt;response.data.updateVendor;
+  }
+  async InsertLocation(
+    input: LocationInsertInput
+  ): Promise&lt;InsertLocationMutation&gt; {
+    const statement &#x3D; &#x60;mutation InsertLocation($input: LocationInsertInput!) {
+        insertLocation(input: $input) {
+          __typename
+          locationID
+          name
+          vendorID
+          budgetID
+          locationTypeID
+          crowdsLevelID
+          totalCapacity
+          city
+          state
+          zipCode
+          lat
+          lng
+          streetAddress
+          phoneNumber
+          website
+          moreInformation
+          statusID
+          Deals {
+            __typename
+            locationDealID
+            locationID
+            dealTypeID
+            discountTypeID
+            name
+            description
+            valueOff
+            finePrint
+            featuredImage
+            startDate
+            endDate
+            recurring
+            recurringFrequencyID
+            startTime
+            endTime
+            statusID
+          }
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      input
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;InsertLocationMutation&gt;response.data.insertLocation;
+  }
+  async UpdateLocation(
+    input: LocationUpdateInput
+  ): Promise&lt;UpdateLocationMutation&gt; {
+    const statement &#x3D; &#x60;mutation UpdateLocation($input: LocationUpdateInput!) {
+        updateLocation(input: $input) {
+          __typename
+          locationID
+          name
+          vendorID
+          budgetID
+          locationTypeID
+          crowdsLevelID
+          totalCapacity
+          city
+          state
+          zipCode
+          lat
+          lng
+          streetAddress
+          phoneNumber
+          website
+          moreInformation
+          statusID
+          Deals {
+            __typename
+            locationDealID
+            locationID
+            dealTypeID
+            discountTypeID
+            name
+            description
+            valueOff
+            finePrint
+            featuredImage
+            startDate
+            endDate
+            recurring
+            recurringFrequencyID
+            startTime
+            endTime
+            statusID
+          }
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      input
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;UpdateLocationMutation&gt;response.data.updateLocation;
+  }
+  async InsertLocationDeal(
+    input: LocationDealInsertInput
+  ): Promise&lt;InsertLocationDealMutation&gt; {
+    const statement &#x3D; &#x60;mutation InsertLocationDeal($input: LocationDealInsertInput!) {
+        insertLocationDeal(input: $input) {
+          __typename
+          locationDealID
+          locationID
+          dealTypeID
+          discountTypeID
+          name
+          description
+          valueOff
+          finePrint
+          featuredImage
+          startDate
+          endDate
+          recurring
+          recurringFrequencyID
+          startTime
+          endTime
+          statusID
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      input
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;InsertLocationDealMutation&gt;response.data.insertLocationDeal;
+  }
+  async UpdateLocationDeal(
+    input: LocationDealUpdateInput
+  ): Promise&lt;UpdateLocationDealMutation&gt; {
+    const statement &#x3D; &#x60;mutation UpdateLocationDeal($input: LocationDealUpdateInput!) {
+        updateLocationDeal(input: $input) {
+          __typename
+          locationDealID
+          locationID
+          dealTypeID
+          discountTypeID
+          name
+          description
+          valueOff
+          finePrint
+          featuredImage
+          startDate
+          endDate
+          recurring
+          recurringFrequencyID
+          startTime
+          endTime
+          statusID
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      input
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;UpdateLocationDealMutation&gt;response.data.updateLocationDeal;
+  }
+  async InsertLocationHours(
+    input: LocationHoursInsertInput
+  ): Promise&lt;InsertLocationHoursMutation&gt; {
+    const statement &#x3D; &#x60;mutation InsertLocationHours($input: LocationHoursInsertInput!) {
+        insertLocationHours(input: $input) {
+          __typename
+          locationHoursID
+          locationID
+          dayOfTheWeekID
+          openTime
+          closeTime
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      input
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;InsertLocationHoursMutation&gt;response.data.insertLocationHours;
+  }
+  async UpdateLocationHours(
+    input: LocationHoursUpdateInput
+  ): Promise&lt;UpdateLocationHoursMutation&gt; {
+    const statement &#x3D; &#x60;mutation UpdateLocationHours($input: LocationHoursUpdateInput!) {
+        updateLocationHours(input: $input) {
+          __typename
+          locationHoursID
+          locationID
+          dayOfTheWeekID
+          openTime
+          closeTime
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      input
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;UpdateLocationHoursMutation&gt;response.data.updateLocationHours;
+  }
+  async InsertLocationMenuItem(
+    input: LocationMenuItemInsertInput
+  ): Promise&lt;InsertLocationMenuItemMutation&gt; {
+    const statement &#x3D; &#x60;mutation InsertLocationMenuItem($input: LocationMenuItemInsertInput!) {
+        insertLocationMenuItem(input: $input) {
+          __typename
+          locationMenuItemID
+          locationID
+          menuCategoryID
+          name
+          description
+          price
+          photo
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      input
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;InsertLocationMenuItemMutation&gt;response.data.insertLocationMenuItem;
+  }
+  async UpdateLocationMenuItem(
+    input: LocationMenuItemUpdateInput
+  ): Promise&lt;UpdateLocationMenuItemMutation&gt; {
+    const statement &#x3D; &#x60;mutation UpdateLocationMenuItem($input: LocationMenuItemUpdateInput!) {
+        updateLocationMenuItem(input: $input) {
+          __typename
+          locationMenuItemID
+          locationID
+          menuCategoryID
+          name
+          description
+          price
+          photo
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      input
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;UpdateLocationMenuItemMutation&gt;response.data.updateLocationMenuItem;
+  }
+  async InsertLocationCuisine(
+    input: LocationCuisineInsertInput
+  ): Promise&lt;InsertLocationCuisineMutation&gt; {
+    const statement &#x3D; &#x60;mutation InsertLocationCuisine($input: LocationCuisineInsertInput!) {
+        insertLocationCuisine(input: $input) {
+          __typename
+          locationID
+          cuisineID
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      input
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;InsertLocationCuisineMutation&gt;response.data.insertLocationCuisine;
+  }
+  async UpdateLocationCuisine(
+    input: LocationCuisineUpdateInput
+  ): Promise&lt;UpdateLocationCuisineMutation&gt; {
+    const statement &#x3D; &#x60;mutation UpdateLocationCuisine($input: LocationCuisineUpdateInput!) {
+        updateLocationCuisine(input: $input) {
+          __typename
+          locationID
+          cuisineID
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      input
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;UpdateLocationCuisineMutation&gt;response.data.updateLocationCuisine;
+  }
+  async DeleteVendor(p_vendorID: number): Promise&lt;DeleteVendorMutation&gt; {
+    const statement &#x3D; &#x60;mutation DeleteVendor($p_vendorID: Int!) {
+        deleteVendor(p_vendorID: $p_vendorID) {
+          __typename
+          vendorID
+          accountID
+          firstName
+          lastName
+          phoneNumber
+          accountTypeID
+          statusID
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      p_vendorID
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;DeleteVendorMutation&gt;response.data.deleteVendor;
+  }
+  async DeleteUser(p_userID: number): Promise&lt;DeleteUserMutation&gt; {
+    const statement &#x3D; &#x60;mutation DeleteUser($p_userID: Int!) {
+        deleteUser(p_userID: $p_userID) {
+          __typename
+          userID
+          accountID
+          accountTypeID
+          statusID
+          budgetID
+          restaurantCrowdsLevelID
+          barCrowdsLevelID
+          firstName
+          lastName
+          profilePhoto
+          dateOfBirth
+          genderID
+          city
+          state
+          zipCode
+          streetAddress
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      p_userID
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;DeleteUserMutation&gt;response.data.deleteUser;
+  }
+  async DeleteLocation(
+    p_vendorID: number,
+    p_locationID: number
+  ): Promise&lt;DeleteLocationMutation&gt; {
+    const statement &#x3D; &#x60;mutation DeleteLocation($p_vendorID: Int!, $p_locationID: Int!) {
+        deleteLocation(p_vendorID: $p_vendorID, p_locationID: $p_locationID) {
+          __typename
+          locationID
+          name
+          vendorID
+          budgetID
+          locationTypeID
+          crowdsLevelID
+          totalCapacity
+          city
+          state
+          zipCode
+          lat
+          lng
+          streetAddress
+          phoneNumber
+          website
+          moreInformation
+          statusID
+          Deals {
+            __typename
+            locationDealID
+            locationID
+            dealTypeID
+            discountTypeID
+            name
+            description
+            valueOff
+            finePrint
+            featuredImage
+            startDate
+            endDate
+            recurring
+            recurringFrequencyID
+            startTime
+            endTime
+            statusID
+          }
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      p_vendorID,
+      p_locationID
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;DeleteLocationMutation&gt;response.data.deleteLocation;
+  }
+  async DeleteLocationMenuItem(
+    p_vendorID: number,
+    p_locationMenuItemID: number
+  ): Promise&lt;DeleteLocationMenuItemMutation&gt; {
+    const statement &#x3D; &#x60;mutation DeleteLocationMenuItem($p_vendorID: Int!, $p_locationMenuItemID: Int!) {
+        deleteLocationMenuItem(p_vendorID: $p_vendorID, p_locationMenuItemID: $p_locationMenuItemID) {
+          __typename
+          locationMenuItemID
+          locationID
+          menuCategoryID
+          name
+          description
+          price
+          photo
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      p_vendorID,
+      p_locationMenuItemID
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;DeleteLocationMenuItemMutation&gt;response.data.deleteLocationMenuItem;
+  }
+  async DeleteLocationDeal(
+    p_locationID: number,
+    p_locationDealID: number
+  ): Promise&lt;DeleteLocationDealMutation&gt; {
+    const statement &#x3D; &#x60;mutation DeleteLocationDeal($p_locationID: Int!, $p_locationDealID: Int!) {
+        deleteLocationDeal(p_locationID: $p_locationID, p_locationDealID: $p_locationDealID) {
+          __typename
+          locationDealID
+          locationID
+          dealTypeID
+          discountTypeID
+          name
+          description
+          valueOff
+          finePrint
+          featuredImage
+          startDate
+          endDate
+          recurring
+          recurringFrequencyID
+          startTime
+          endTime
+          statusID
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      p_locationID,
+      p_locationDealID
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;DeleteLocationDealMutation&gt;response.data.deleteLocationDeal;
+  }
+  async GetUser(p_awsToken: string): Promise&lt;GetUserQuery&gt; {
+    const statement &#x3D; &#x60;query GetUser($p_awsToken: String!) {
+        getUser(p_awsToken: $p_awsToken) {
+          __typename
+          userID
+          accountID
+          accountTypeID
+          statusID
+          budgetID
+          restaurantCrowdsLevelID
+          barCrowdsLevelID
+          firstName
+          lastName
+          profilePhoto
+          dateOfBirth
+          genderID
+          city
+          state
+          zipCode
+          streetAddress
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      p_awsToken
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;GetUserQuery&gt;response.data.getUser;
+  }
+  async GetUserCuisineIDs(p_awsToken: string): Promise&lt;GetUserCuisineIDsQuery&gt; {
+    const statement &#x3D; &#x60;query GetUserCuisineIDs($p_awsToken: String!) {
+        getUserCuisineIDs(p_awsToken: $p_awsToken) {
+          __typename
+          userID
+          cuisineID
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      p_awsToken
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;GetUserCuisineIDsQuery&gt;response.data.getUserCuisineIDs;
+  }
+  async GetVendor(p_awsToken: string): Promise&lt;GetVendorQuery&gt; {
+    const statement &#x3D; &#x60;query GetVendor($p_awsToken: String!) {
+        getVendor(p_awsToken: $p_awsToken) {
+          __typename
+          vendorID
+          accountID
+          firstName
+          lastName
+          phoneNumber
+          accountTypeID
+          statusID
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      p_awsToken
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;GetVendorQuery&gt;response.data.getVendor;
+  }
+  async GetLocation(p_locationID: number): Promise&lt;GetLocationQuery&gt; {
+    const statement &#x3D; &#x60;query GetLocation($p_locationID: Int!) {
+        getLocation(p_locationID: $p_locationID) {
+          __typename
+          locationID
+          name
+          vendorID
+          budgetID
+          locationTypeID
+          crowdsLevelID
+          totalCapacity
+          city
+          state
+          zipCode
+          lat
+          lng
+          streetAddress
+          phoneNumber
+          website
+          moreInformation
+          statusID
+          Deals {
+            __typename
+            locationDealID
+            locationID
+            dealTypeID
+            discountTypeID
+            name
+            description
+            valueOff
+            finePrint
+            featuredImage
+            startDate
+            endDate
+            recurring
+            recurringFrequencyID
+            startTime
+            endTime
+            statusID
+          }
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      p_locationID
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;GetLocationQuery&gt;response.data.getLocation;
+  }
+  async GetLocationByVendorId(
+    p_vendorID: number
+  ): Promise&lt;GetLocationByVendorIdQuery&gt; {
+    const statement &#x3D; &#x60;query GetLocationByVendorId($p_vendorID: Int!) {
+        getLocationByVendorID(p_vendorID: $p_vendorID) {
+          __typename
+          locationID
+          name
+          vendorID
+          budgetID
+          locationTypeID
+          crowdsLevelID
+          totalCapacity
+          city
+          state
+          zipCode
+          lat
+          lng
+          streetAddress
+          phoneNumber
+          website
+          moreInformation
+          statusID
+          Deals {
+            __typename
+            locationDealID
+            locationID
+            dealTypeID
+            discountTypeID
+            name
+            description
+            valueOff
+            finePrint
+            featuredImage
+            startDate
+            endDate
+            recurring
+            recurringFrequencyID
+            startTime
+            endTime
+            statusID
+          }
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      p_vendorID
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;GetLocationByVendorIdQuery&gt;response.data.getLocationByVendorID;
+  }
+  async GetLocationsByZip(p_zipCode: number): Promise&lt;GetLocationsByZipQuery&gt; {
+    const statement &#x3D; &#x60;query GetLocationsByZip($p_zipCode: Int!) {
+        getLocationsByZip(p_zipCode: $p_zipCode) {
+          __typename
+          locationID
+          name
+          vendorID
+          budgetID
+          locationTypeID
+          crowdsLevelID
+          totalCapacity
+          city
+          state
+          zipCode
+          lat
+          lng
+          streetAddress
+          phoneNumber
+          website
+          moreInformation
+          statusID
+          Deals {
+            __typename
+            locationDealID
+            locationID
+            dealTypeID
+            discountTypeID
+            name
+            description
+            valueOff
+            finePrint
+            featuredImage
+            startDate
+            endDate
+            recurring
+            recurringFrequencyID
+            startTime
+            endTime
+            statusID
+          }
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      p_zipCode
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;GetLocationsByZipQuery&gt;response.data.getLocationsByZip;
+  }
+  async GetCuisineRef(): Promise&lt;GetCuisineRefQuery&gt; {
+    const statement &#x3D; &#x60;query GetCuisineRef {
+        getCuisineRef {
+          __typename
+          cuisineID
+          name
+          description
+        }
+      }&#x60;;
+    const response &#x3D; (await API.graphql(graphqlOperation(statement))) as any;
+    return &lt;GetCuisineRefQuery&gt;response.data.getCuisineRef;
+  }
+  async GetLocationDealsByLocation(
+    p_locationID: number
+  ): Promise&lt;GetLocationDealsByLocationQuery&gt; {
+    const statement &#x3D; &#x60;query GetLocationDealsByLocation($p_locationID: Int!) {
+        getLocationDealsByLocation(p_locationID: $p_locationID) {
+          __typename
+          locationDealID
+          locationID
+          dealTypeID
+          discountTypeID
+          name
+          description
+          valueOff
+          finePrint
+          featuredImage
+          startDate
+          endDate
+          recurring
+          recurringFrequencyID
+          startTime
+          endTime
+          statusID
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      p_locationID
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;GetLocationDealsByLocationQuery&gt;(
+      response.data.getLocationDealsByLocation
+    );
+  }
+  async GetLocationDeal(
+    p_locationDealID: number
+  ): Promise&lt;GetLocationDealQuery&gt; {
+    const statement &#x3D; &#x60;query GetLocationDeal($p_locationDealID: Int!) {
+        getLocationDeal(p_locationDealID: $p_locationDealID) {
+          __typename
+          locationDealID
+          locationID
+          dealTypeID
+          discountTypeID
+          name
+          description
+          valueOff
+          finePrint
+          featuredImage
+          startDate
+          endDate
+          recurring
+          recurringFrequencyID
+          startTime
+          endTime
+          statusID
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      p_locationDealID
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;GetLocationDealQuery&gt;response.data.getLocationDeal;
+  }
+  async GetLocationRadius(
+    p_lat: number,
+    p_lng: number,
+    p_radius: number
+  ): Promise&lt;GetLocationRadiusQuery&gt; {
+    const statement &#x3D; &#x60;query GetLocationRadius($p_lat: Float!, $p_lng: Float!, $p_radius: Float!) {
+        getLocationRadius(p_lat: $p_lat, p_lng: $p_lng, p_radius: $p_radius) {
+          __typename
+          locationID
+          name
+          vendorID
+          budgetID
+          locationTypeID
+          crowdsLevelID
+          totalCapacity
+          city
+          state
+          zipCode
+          lat
+          lng
+          streetAddress
+          phoneNumber
+          website
+          moreInformation
+          statusID
+          Deals {
+            __typename
+            locationDealID
+            locationID
+            dealTypeID
+            discountTypeID
+            name
+            description
+            valueOff
+            finePrint
+            featuredImage
+            startDate
+            endDate
+            recurring
+            recurringFrequencyID
+            startTime
+            endTime
+            statusID
+          }
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      p_lat,
+      p_lng,
+      p_radius
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;GetLocationRadiusQuery&gt;response.data.getLocationRadius;
+  }
+  async GetLocationByFilter(
+    input?: LocationGetByFilterInput
+  ): Promise&lt;GetLocationByFilterQuery&gt; {
+    const statement &#x3D; &#x60;query GetLocationByFilter($input: LocationGetByFilterInput) {
+        getLocationByFilter(input: $input) {
+          __typename
+          locationID
+          name
+          vendorID
+          budgetID
+          locationTypeID
+          crowdsLevelID
+          totalCapacity
+          city
+          state
+          zipCode
+          lat
+          lng
+          streetAddress
+          phoneNumber
+          website
+          moreInformation
+          statusID
+          Deals {
+            __typename
+            locationDealID
+            locationID
+            dealTypeID
+            discountTypeID
+            name
+            description
+            valueOff
+            finePrint
+            featuredImage
+            startDate
+            endDate
+            recurring
+            recurringFrequencyID
+            startTime
+            endTime
+            statusID
+          }
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {};
+    if (input) {
+      gqlAPIServiceArguments.input &#x3D; input;
+    }
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;GetLocationByFilterQuery&gt;response.data.getLocationByFilter;
+  }
+  async GetLocationHours(p_locationID: number): Promise&lt;GetLocationHoursQuery&gt; {
+    const statement &#x3D; &#x60;query GetLocationHours($p_locationID: Int!) {
+        getLocationHours(p_locationID: $p_locationID) {
+          __typename
+          locationHoursID
+          locationID
+          dayOfTheWeekID
+          openTime
+          closeTime
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      p_locationID
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;GetLocationHoursQuery&gt;response.data.getLocationHours;
+  }
+  async GetLocationMenuItem(
+    p_locationID: number
+  ): Promise&lt;GetLocationMenuItemQuery&gt; {
+    const statement &#x3D; &#x60;query GetLocationMenuItem($p_locationID: Int!) {
+        getLocationMenuItem(p_locationID: $p_locationID) {
+          __typename
+          locationMenuItemID
+          locationID
+          menuCategoryID
+          name
+          description
+          price
+          photo
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      p_locationID
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;GetLocationMenuItemQuery&gt;response.data.getLocationMenuItem;
+  }
+  async GetLocationCuisine(
+    p_locationID: number
+  ): Promise&lt;GetLocationCuisineQuery&gt; {
+    const statement &#x3D; &#x60;query GetLocationCuisine($p_locationID: Int!) {
+        getLocationCuisine(p_locationID: $p_locationID) {
+          __typename
+          locationID
+          cuisineID
+        }
+      }&#x60;;
+    const gqlAPIServiceArguments: any &#x3D; {
+      p_locationID
+    };
+    const response &#x3D; (await API.graphql(
+      graphqlOperation(statement, gqlAPIServiceArguments)
+    )) as any;
+    return &lt;GetLocationCuisineQuery&gt;response.data.getLocationCuisine;
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'APIService.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

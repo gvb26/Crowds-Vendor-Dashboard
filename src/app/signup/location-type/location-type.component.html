@@ -1,0 +1,20 @@
+<app-crowds-header></app-crowds-header>
+
+<div class="container location-types pageSize">
+    <div class="container">
+        <p class="location-types-label">What is your Business Type? </p>
+        <div class="location-type-chips">
+            <mat-chip-list [multiple]="false">
+                <mat-chip *ngFor="let type of typeChips" selected="{{type.selected}}" (click)="toggleSelection(type)">
+                        {{type.name}}
+                </mat-chip>
+            </mat-chip-list>
+        </div>
+        <br>
+        <br>
+    </div>
+    <app-crowds-button text="Next" 
+                       link="/signup/cuisine-type"
+                       (click)="saveData()">
+    </app-crowds-button>
+</div>

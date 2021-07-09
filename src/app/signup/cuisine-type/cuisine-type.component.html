@@ -1,0 +1,33 @@
+<div *ngIf="loading" class="progress-bar">
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</div>
+<app-crowds-header></app-crowds-header>
+<div class="container pageSize">
+    <div class="container cuisine-types">
+        <p class="cuisine-types-label">
+          What cuisine is your restaurant?
+        </p>
+        <div class=" cuisine-type-chips">
+          <mat-chip-list [multiple]="true">
+            <mat-chip *ngFor="let chip of chips" 
+                      selected={{chip.selected}}
+                      (click)="chip.selected = !chip.selected">
+              {{chip.name}}
+            </mat-chip>
+          </mat-chip-list>
+        </div>
+      </div>
+      <div class="container">
+        <button (click)="signup()" 
+                type="button" 
+                class="next-btn crowds-form-element btn btn-outline-light"
+                [ngStyle]="{'background': '#3BC269'}">
+          Sign Up
+        </button>
+      </div>
+</div>
+
+
+
+  
+

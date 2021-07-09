@@ -1,0 +1,52 @@
+<app-slide-panel [activePane]="isLeftVisible ? 'left' : 'right'">
+  <div leftPane *ngFor="let activeDeal of activeDeals">
+      <mat-card class="dealsCard font">
+        <div class="dealsPic">
+          <img mat-card-image src='../../../assets/wings.PNG'>
+          <!-- <img mat-card-image src='{{activeDeal.featuredImage}}'> -->
+        </div>
+        <div class="dealsEdit">
+          <button [routerLink]="['/edit-deal', activeDeal.locationDealID]" class="editbutton">
+              <i class="fas fa-pen"></i>
+          </button>
+        </div>
+        <div class="dealsContent">
+          <mat-card-header>
+            <mat-card-title>{{ activeDeal.name }}</mat-card-title>
+            <mat-card-subtitle>{{ activeDeal.finePrint }}</mat-card-subtitle>
+          </mat-card-header>
+
+          <mat-card-content>
+            <p>Available until {{ activeDeal.endDate }}</p>
+          </mat-card-content>
+        </div>
+      </mat-card>
+      <br>
+  </div>
+
+
+
+  <!-- The below code represents expired deals -->
+  <div rightPane>
+      <mat-card class="dealsCard font expSpacing">
+        <div class="dealsPic">
+          <img mat-card-image src='../../../assets/wings.PNG'>
+        </div>
+        <div class="dealsEdit">
+          <button class="editbutton">
+              <i class="fas fa-pen"></i>
+          </button>
+        </div>
+        <div class="expContent">
+          <mat-card-header>
+            <mat-card-title>EXPIRED</mat-card-title>
+            <mat-card-subtitle>Receive $5 off all appetizers with another purchase</mat-card-subtitle>
+          </mat-card-header>
+
+          <mat-card-content>
+            <p>Available until 5PM on 5/30</p>
+          </mat-card-content>
+        </div>
+      </mat-card>
+  </div>
+</app-slide-panel>

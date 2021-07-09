@@ -1,0 +1,24 @@
+<app-crowds-header></app-crowds-header>
+<div class="container location-types pageSize" fxLayout="column" fxLayoutAlign="start center">
+    <p class="location-types-label">What is the max capacity of your establishment?</p>
+    <div>          
+        <mat-slider #capacity
+            [disabled]="disabled"
+            [max]="max"
+            [min]="min"
+            [step]="step"
+            [thumbLabel]="thumbLabel"
+            [(ngModel)]="value"
+            [vertical]="vertical">
+        </mat-slider>
+    </div>
+    <br>
+    <div class="fillSpace">
+        <app-crowds-button class="fillSpace" 
+                        text="Next" 
+                        link="/signup/location-type"
+                        (click)="saveData(capacity.displayValue)">
+        </app-crowds-button>
+    </div>
+</div>
+

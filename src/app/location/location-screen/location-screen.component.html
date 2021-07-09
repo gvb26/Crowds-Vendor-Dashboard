@@ -1,0 +1,116 @@
+<div [formGroup]="parentForm">
+  <mat-card class="mat-card font">
+    <div *ngIf="!editMode" (click)="openEditMode()" class="editbutton">
+        <span class="fa fa-pencil"></span>
+    </div>
+  <mat-card-header>
+    <mat-card-title class="header">
+      <input [formControlName]="'title'" 
+              class="title-input" type="text"  
+              placeholder="title" name="title"
+              value="{{name}}">
+    </mat-card-title>
+    <mat-card-subtitle class="textColor subtitle">
+      <span *ngIf="!editMode">{{street_address}}, {{city}} {{state}} {{zip}}</span>
+      <div *ngIf="editMode"
+            fxLayout="row"
+            fxLayoutAlign="space-between">
+          <input [formControlName]="'street_address'" class="str_address-input" 
+                  placeholder="street address" type="text"
+                  name="street address" value="{{street_address}}">
+          <input [formControlName]="'city'" class="city-input" 
+                  placeholder="city" type="text"
+                  name="city" value="{{city}}">
+          <input [formControlName]="'state'" class="state-input" 
+                  placeholder="state" type="text"
+                  name="state" value="{{state}}">
+          <input [formControlName]="'zip'" class="zip-input" 
+                  placeholder="zip" type="text"
+                  name="zip" value="{{zip}}">
+      </div>
+  
+    </mat-card-subtitle>
+  </mat-card-header>
+  
+  <mat-card-content>
+    <!-- this div is for the hours of operation -->
+    <div class="row textColor">
+      <div class="hourColumn">
+        <h6 class="rowTitle">Hours</h6>
+      </div>
+      <div class="dayColumn" fxLayout="column" fxLayoutAlign="space-between">
+        <h6 *ngFor="let hour of hours">
+          {{hour.day}}
+        </h6>
+      </div>
+      <div class="timeColumn" fxLayout="column" fxLayoutAlign="space-between">
+        <h6 [formGroupName]="'hours'" *ngFor="let hour of hours">
+          <input [formControlName]="hour.day"
+                 class="hours-input" type="text"
+                 name="hour" value="{{hour.value}}">
+        </h6>
+      </div>
+    </div>
+    <div class="row textColor">
+      <div class="phoneColumn">
+        <h6 class="rowTitle">Phone</h6>
+      </div>
+      <div class="numberColumn">
+        <h6>
+         <input [formControlName]="'phone'"
+                 class="phone-input" placeholder="(xxx) xxx - xxxx" type="text" 
+                 name="phone" value="{{phone}}"> 
+        </h6>
+      </div>
+    </div>
+    <div class="row textColor">
+      <div class="phoneColumn">
+        <h6 class="rowTitle">Website</h6>
+      </div>
+      <div class="numberColumn">
+        <h6>
+          <input [formControlName]="'website'" 
+                  class="website-input" placeholder="www.business.com" 
+                  type="text" name="website" value="{{website}}">
+        </h6>
+      </div>
+    </div>
+    <div class="row textColor">
+      <div class="phoneColumn">
+        <h6 class="rowTitle">Capacity</h6>
+      </div>
+      <div class="numberColumn">
+        <h6>
+          <input [formControlName]="'capacity'"
+                 class="capacity-input" placeholder="0" type="text" 
+                 name="capacity" value="{{capacity}}">
+           people
+        </h6>
+      </div>
+    </div>
+    <div class="row chipSpacing">
+      <mat-chip-list [multiple]="true"> 
+        <mat-chip *ngFor="let cuisine of cuisines" 
+                  class="chipShadow"
+                  selected="{{cuisine.selected}}"
+                  (click)="cuisine.selected = !cuisine.selected">
+          {{cuisine.name}}
+        </mat-chip>
+      </mat-chip-list>
+    </div>
+    <div class="row chipSpacing locationType">
+      <mat-chip-list [multiple]="true">
+        <mat-chip selected="{{locationType.selected}}" 
+                  (click)="locationType.selected = !locationType.selected" 
+                  *ngFor="let locationType of locationTypes" 
+                  class="chipShadow">
+          {{locationType.name}}
+        </mat-chip>
+      </mat-chip-list>
+    </div>
+  </mat-card-content>
+  <app-crowds-button color="#395CB5" text="View Menu" noLink="true" (click)="openMenu()">
+  </app-crowds-button>
+  </mat-card>
+</div>
+

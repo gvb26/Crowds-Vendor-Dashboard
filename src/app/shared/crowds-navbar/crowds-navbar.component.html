@@ -1,0 +1,45 @@
+<div class="nav-all" fxLayout="row">
+  <div class="crowds-logo">
+    <img class="logo" src="assets/crowds_logo.png" alt="crowds-logo">
+  </div>
+
+  <div class="nav-items" fxLayout="row" fxLayoutAlign="end center">
+
+    <div class="progress-steps" *ngIf="progress">
+      <ngb-progressbar class="progress-bar" height="25px" [value]="currentStepValue">
+        {{step}} of {{maxSteps}}
+      </ngb-progressbar>
+    </div>
+    <div class="editAndNavItems" fxLayout="row" fxLayoutAlign="end center">
+      <div *ngIf="!editMode" class="nav-item">
+        <label routerLink="/dashboard" class="nav-label">Dashboard</label>
+      </div>
+
+      <div *ngIf="!editMode" class="nav-item">
+        <label routerLink="/locations" class="nav-label">Locations</label>
+      </div>
+
+      <div *ngIf="!editMode" ngbDropdown placement="bottom-right" class="d-inline-block nav-item">
+        <label class="nav-item" id="dropdownBasic1" ngbDropdownToggle>Account</label>
+        <div ngbDropdownMenu>
+          <button class="dropdown-item" (click)="signOut()">Sign Out</button>
+        </div>
+      </div>
+
+      <div *ngIf="editMode" class="chips">
+        <mat-chip-list>
+            <mat-chip *ngIf="editDeal" (click)="delete()" class="delete-chip">
+                <span class="fa fa-trash"></span> Delete
+              </mat-chip>
+            <mat-chip (click)="cancel()" class="cancel-chip">
+              <span class="fa fa-close"></span> Cancel
+            </mat-chip>
+            <mat-chip (click)="save()" class="save-chip">
+              <span class="fa fa-check"></span> Save
+            </mat-chip>
+        </mat-chip-list>
+      </div>
+    </div>
+  </div>
+
+</div>

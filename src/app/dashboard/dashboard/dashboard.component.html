@@ -1,0 +1,20 @@
+<div *ngIf="loading" class="progress-bar">
+    <mat-progress-bar mode="query"></mat-progress-bar>
+</div>
+
+<crowds-navbar></crowds-navbar>
+<div class="dashboard" fxLayout="row" fxLayoutAlign="space-around">
+    <div class="dashboard-left" fxLayout="column" fxLayoutAlign="space-between">
+        <div class="crowd-size">
+            <app-crowd-size></app-crowd-size>
+        </div>
+        <app-foot-traffic></app-foot-traffic>
+    </div>
+    <div class="vertical-line"></div>
+    <div class="dashboard-right" fxLayout="column" fxLayoutAlign="flex-start">
+        <app-deal-buttons #dealButtons (clicked)="showExpiredDeals(dealsDashboard, dealButtons)"></app-deal-buttons>
+        <br>
+        <app-deal-dashboard (loaded)="stopLoading()" #dealsDashboard></app-deal-dashboard>
+        <!-- <app-deal-dashboard #dealsDashboard1></app-deal-dashboard> -->
+    </div>
+</div>

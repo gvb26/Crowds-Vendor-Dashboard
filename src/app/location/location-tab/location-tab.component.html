@@ -1,0 +1,31 @@
+<div *ngIf="loading" class="progress-bar">
+  <mat-progress-bar mode="query"></mat-progress-bar>
+</div>
+<div class="nav-bar">
+  <crowds-navbar></crowds-navbar>
+</div>
+
+<div class="locations" fxLayout="row wrap" fxLayoutGap="2.2%">
+  <div *ngFor="let location of locations">
+    <app-location-screen
+        id={{location.locationID}}
+        name="{{location.name}}"
+        street_address="{{location.streetAddress}}"
+        city="{{location.city}}"
+        state="{{location.state}}"
+        zip="{{location.zipCode}}"
+        [hours]="locationHours"
+        phone="{{location.phoneNumber}}"
+        website="{{location.website}}"
+        capacity="{{location.totalCapacity}}"
+        [cuisines]="locationCuisines"
+        [locationTypeID]="location.locationTypeID"
+        [menu]="locationMenu">
+      
+    </app-location-screen>
+  </div>
+  <div (click)="addNewLocation()" class="add-location" fxLayout="column" fxLayoutAlign="center center">
+    <span class="fa fa-plus-square"></span>
+    <span>Add new location</span>
+  </div>
+</div>

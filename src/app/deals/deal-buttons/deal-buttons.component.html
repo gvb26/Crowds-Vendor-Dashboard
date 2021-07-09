@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<app-slide-panel [activePane]="isLeftVisible ? 'left' : 'right'">
+  <div leftPane fxLayout="row" class="font">
+    <div class="dealButtons">
+
+      <!-- <app-crowds-button color="#395CB5" text="New Deal" link=""> -->
+      <button routerLink="/new-deal" type="button" class="next-btn crowds-form-element btn btn-outline-light"
+        [ngStyle]="{'background': '#395CB5', 'color': 'white'}">
+        <i class="fas fa-plus-circle"></i>&nbsp;
+        New Deal
+      </button>
+
+
+      <!-- </app-crowds-button> -->
+    </div>
+    <div class="dealButtons">
+      <!-- <app-crowds-button color="white" text="View Expired Deals" link=""></app-crowds-button> -->
+      <button (click)="toExpiredDeals()" type="button" class="next-btn crowds-form-element btn btn-outline-light"
+        [ngStyle]="{'background': '#ffffff'}">View Expired Deals
+      </button>
+    </div>
+  </div>
+
+  <div rightPane fxLayout="row" class="font">
+    <div class="dealButtons">
+      <button (click)="toExpiredDeals()" type="button" class="next-btn crowds-form-element btn btn-outline-light"
+        [ngStyle]="{'background': '#ffffff', 'color': 'gray'}"><span>
+          </span> <&nbsp; &nbsp;Return to Active Deals </button> <!-- <app-crowds-button color="#ffffff"
+            class="next-btn" text="<  Return to Active Deals" (click)="toExpiredDeals()">
+            </app-crowds-button> -->
+    </div>
+  </div>
+</app-slide-panel>

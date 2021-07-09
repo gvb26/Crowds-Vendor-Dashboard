@@ -1,0 +1,111 @@
+// Beginning Angular Material Theming
+@import '~@angular/material/_theming';
+
+@include mat-core(); 
+
+$crowds-brand-blue: (
+    50 : #e7ebf6,
+    100 : #c4cee9,
+    200 : #9caeda,
+    300 : #748dcb,
+    400 : #5774c0,
+    500 : #395cb5,
+    600 : #3354ae,
+    700 : #2c4aa5,
+    800 : #24419d,
+    900 : #17308d,
+    A100 : #c3ceff,
+    A200 : #90a4ff,
+    A400 : #5d7bff,
+    A700 : #4466ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #ffffff,
+    )
+);
+
+$crowds-brand-red: (
+    50 : #fce8e8,
+    100 : #f8c5c5,
+    200 : #f39f9f,
+    300 : #ee7878,
+    400 : #ea5b5b,
+    500 : #e63e3e,
+    600 : #e33838,
+    700 : #df3030,
+    800 : #db2828,
+    900 : #d51b1b,
+    A100 : #ffffff,
+    A200 : #ffd6d6,
+    A400 : #ffa3a3,
+    A700 : #ff8a8a,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$crowds-brand-green: (
+    50 : #e7f8ed,
+    100 : #c4edd2,
+    200 : #9de1b4,
+    300 : #76d496,
+    400 : #58cb80,
+    500 : #3bc269,
+    600 : #35bc61,
+    700 : #2db456,
+    800 : #26ac4c,
+    900 : #199f3b,
+    A100 : #d4ffde,
+    A200 : #a1ffb6,
+    A400 : #6eff8f,
+    A700 : #55ff7b,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$crowds-palette-primary: mat-palette($crowds-brand-blue);
+$crowds-palette-accent:  mat-palette($crowds-brand-red);
+$crowds-palette-warn:  mat-palette($crowds-brand-green);
+
+$crowds-theme: mat-light-theme($crowds-palette-primary, $crowds-palette-accent, $crowds-palette-warn);
+
+@include angular-material-theme($crowds-theme);

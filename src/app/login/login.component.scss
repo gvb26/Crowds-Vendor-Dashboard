@@ -1,0 +1,36 @@
+.pageSize {
+    width: 25%;
+}
+
+.eye-btn{
+  border-color: #ced4da;
+  color: #555555;
+  background-color: white;
+  border-radius: 20px;
+  border-left: none;
+}
+
+.eye-btn:active{
+  background-color: white !important;
+}
+
+.btn:focus, .btn:active, .btn:hover{
+    box-shadow: none !important;
+    outline: 0;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
+.show > .btn-outline-primary.dropdown-toggle {
+  border-color: white;
+}
+
+.email-error{
+  margin-top: 2%;
+}
+
+.next-btn{
+    background-color: #395CB5;
+    color: white;
+    width: 100%;
+    margin-bottom: 1rem;
+  }

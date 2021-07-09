@@ -1,0 +1,107 @@
+.all{
+    margin: 1% 30% 0 30%;
+    color: #395CB5;
+}
+
+.progress-bar{
+    width: 100%;
+}
+
+.dealType{
+    width: 30%;
+}
+
+.dealAmountContainer{
+    color: gray;
+}
+
+.dealInput{
+    width: 6%;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 0.5px  #555555 solid;
+    background-color: #F9F9F9;
+    color: gray;
+}
+
+input:focus, textarea:focus {
+    outline-width: 0;
+}
+
+.chip{
+    width: 75px;
+    background-color: white;
+    color: gray;
+    text-align: center;
+    box-shadow: 0 0 3px 0.5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.date{
+    width: 28%;
+    color: gray;
+}
+
+.start-date, .start-time{
+  margin-right: 3%;  
+}
+
+.dealRecurring{
+    width: 100%;
+}
+
+.occurringTime{
+    width: 60%;
+}
+
+.period{
+    margin-bottom: 2%;
+}
+
+.recDay{
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+}
+
+.time-label{
+    font-size: 0.8rem;
+}
+
+.dealTitle{
+    width: 60%;
+}
+
+.dealDesc{
+    width: 60%;
+    border: 0.5px  #555555 solid;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.file-upload {
+    border: 2px solid #395CB5;
+    width: 25%;
+    height: 130px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: center;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.deal-image{
+    width: 25%;
+    height: 130px;
+    margin-right: 2%;
+    cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

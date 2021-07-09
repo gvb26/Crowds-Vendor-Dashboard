@@ -1,0 +1,40 @@
+.all{
+    height: 83%; 
+}
+
+.location-info{
+    margin-top: 1%;
+}
+
+.vertical-line{
+    border-left: black solid 0.5px;
+    height: 110%;
+}
+
+.menu{
+    height: 100%;
+    margin-top: 1%;
+}
+
+.menu-title{
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.menu-body-container{
+    height: 100%;
+}
+
+.menu-body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.add-menu{
+    cursor: pointer;
+    color: #395CB5;
+    border: 2px solid #395CB5;
+    width: 400px;
+    font-size: 20px;
+    margin-left: 2%;
+}

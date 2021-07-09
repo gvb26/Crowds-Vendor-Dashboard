@@ -1,0 +1,32 @@
+<mat-card class="crowd-size">
+    <mat-card-header>
+        <div class="form-group">
+            <select class="form-control">
+              <option *ngFor="let option of sort_options">
+                {{option}}
+            </option>
+            </select>
+        </div>
+        <mat-card-title>Crowd Size</mat-card-title>
+        <mat-card-subtitle>
+          <mat-form-field>
+            <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </mat-card-subtitle>
+    </mat-card-header>
+    <div mat-card-image>
+      <canvas baseChart width="auto" height="95%"
+                [datasets]="lineChartData"
+                [labels]="lineChartLabels"
+                [options]="lineChartOptions"
+                [colors]="lineChartColors"
+                [legend]="lineChartLegend"
+                [chartType]="lineChartType"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)">
+      </canvas>
+    </div>
+</mat-card>
+

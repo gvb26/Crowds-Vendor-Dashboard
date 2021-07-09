@@ -1,0 +1,14 @@
+<div class="container">
+  <a *ngIf="!noLink" routerLink="{{link}}">
+      <button type="button" class="next-btn crowds-form-element btn btn-outline-light"
+              [ngStyle]="{'background': color}">
+          {{text}}
+      </button>
+  </a>
+  <a *ngIf="noLink">
+      <button type="button" class="next-btn crowds-form-element btn btn-outline-light"
+              [ngStyle]="{'background': color}">
+          {{text}}
+      </button>
+  </a>
+</div>
